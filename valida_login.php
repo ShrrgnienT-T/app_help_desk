@@ -13,10 +13,13 @@ $usuarios_app = array(
 // print_r ($usuarios_app);
 // echo '</ pre>';
 
+
+
 foreach( $usuarios_app as $user ){
    echo 'Usuário app: '.$user['email']. '/'. $user['senha'];
    echo '<br/>';
    echo 'Usuário form: '.$_POST['email']. '/'.  $_POST['senha'];
+   echo '<br/>';
    echo '<br/>';
 
    if($user['email'] == $_POST['email'] && $user['senha'] == $_POST['senha']) {
